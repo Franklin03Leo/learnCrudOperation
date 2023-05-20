@@ -6,7 +6,7 @@ const { ObjectId } = require('mongodb');
 const app = express();
 
 // MongoDB Database URL
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb+srv://franklinleo311:of3FE4fIXO8R7qZw@cluster0.smgu3cb.mongodb.net/?retryWrites=true&w=majority';
 const dbName = 'Testdb';
 
 // Connect to MongoDB
