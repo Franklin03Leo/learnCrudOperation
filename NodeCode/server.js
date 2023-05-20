@@ -4,9 +4,12 @@ const cors = require('cors');
 const { MongoClient, ReturnDocument } = require('mongodb');
 const { ObjectId } = require('mongodb');
 const app = express();
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 // MongoDB Database URL
-const url = 'mongodb+srv://franklinleo311:of3FE4fIXO8R7qZw@cluster0.smgu3cb.mongodb.net/?retryWrites=true&w=majority';
+const url = process.env.MONGO_URL;
 const dbName = 'Testdb';
 
 // Connect to MongoDB
